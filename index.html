@@ -114,19 +114,21 @@
                 max-width: 64em;
                 grid-template-columns: repeat(4,1fr);
             }
-            @media all and (max-width:68em) {
-            .articleVVVwrap {
-                grid-template-columns: repeat(2,1fr);
-            }
-            }/* /media */
-            .articleVVVitems {
-                outline: 0.5em solid hsl(359, 69%, 23%);
-            }
             .articleVVVitem {
                 padding: 0.5em;
                 border-radius: 1em;
                 background-color: hsl(0, 69%, 13%);
             }
+            @media all and (max-width:68em) {
+            .articleVVVwrap {
+                grid-template-columns: repeat(2,1fr);
+                padding: 0;
+                grid-gap: 0;
+            }
+            .articleVVVitem {
+                border-radius: 0;
+            }
+            }/* /media */
             .articleVVVitem video {
                 aspect-ratio: 464/848;
             }
