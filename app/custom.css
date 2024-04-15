@@ -94,6 +94,7 @@
 
 /** ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ layoutGallery */
 /** v2024.1.24 demia **/
+/** v2024.4.15 lb13 **/
 /** ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ colors */
 
     .layoutGallery {
@@ -247,6 +248,7 @@
 
 /** ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ workers */
 
+    .layoutGallery .vh100xsize {    height:100vh}
     .layoutGallery .screensize {min-height:100vh}
     .layoutGallery .centerit {
         display: grid;
