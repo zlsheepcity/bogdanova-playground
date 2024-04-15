@@ -108,9 +108,26 @@
         <style>
             .articleVVVwrap {
                 display:   grid;
+                grid-gap:  0.125em;
+                padding:   0em;
+                margin:    0 auto;
+                grid-template-columns: repeat(2,1fr);
+            }
+            .articleVVVtitle {
+                color: hsl(10deg 98% 59%);
+                line-height: 1.00;
+                font-size: 2.5em;
+                grid-column: 1/-1;
+            }
+            .articleVVVtext {
+                padding: 1em 2em;
+                font-size: 1.25em;
+                line-height: 1.00;
+            }
+            @media all and (min-width:68em) {
+            .articleVVVwrap {
                 grid-gap:  1em;
                 padding:   1em;
-                margin:    0 auto;
                 max-width: 64em;
                 grid-template-columns: repeat(4,1fr);
             }
@@ -119,14 +136,13 @@
                 border-radius: 1em;
                 background-color: hsl(0, 69%, 13%);
             }
-            @media all and (max-width:68em) {
-            .articleVVVwrap {
-                grid-template-columns: repeat(2,1fr);
-                padding: 0;
-                grid-gap: 0;
+            .articleVVVtext {
+                padding: 1em 0.25em;
+                font-size: 1.25em;
+                line-height: 1.00;
             }
-            .articleVVVitem {
-                border-radius: 0;
+            .articleVVVitem video:not(:fullscreen) {
+                border-radius: 0.5em;
             }
             }/* /media */
             .articleVVVitem video {
@@ -134,18 +150,6 @@
             }
             .articleVVVitem video:not(:fullscreen) {
                 object-fit: cover;
-                border-radius: 0.5em;
-            }
-            .articleVVVtext {
-                padding: 1em 0.25em;
-                font-size: 1.25em;
-                line-height: 1.00;
-            }
-            .articleVVVtitle {
-                color: hsl(10deg 98% 59%);
-                line-height: 1.00;
-                font-size: 2.5em;
-                grid-column: 1/-1;
             }
         </style>
         <article class="articleVVVwrap">
