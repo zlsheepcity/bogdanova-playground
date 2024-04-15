@@ -119,10 +119,19 @@
                 font-size: 2.5em;
                 grid-column: 1/-1;
             }
+            .articleVVVitem {
+                position: relative;
+                background-color: hsl(0, 69%, 13%);
+            }
             .articleVVVtext {
                 padding: 1em 2em;
-                font-size: 1.25em;
+                font-size: 1em;
+                font-weight: bold;
                 line-height: 1.00;
+                position: absolute;
+                top: 0;
+                right: 0;
+                pointer-events: none;
             }
             @media all and (min-width:68em) {
             .articleVVVwrap {
@@ -134,10 +143,9 @@
             .articleVVVitem {
                 padding: 0.5em;
                 border-radius: 1em;
-                background-color: hsl(0, 69%, 13%);
             }
             .articleVVVtext {
-                padding: 1em 0.25em;
+                padding: 0.5em;
                 font-size: 1.25em;
                 line-height: 1.00;
             }
