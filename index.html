@@ -103,6 +103,87 @@
               --accent-color: var(--colorPaperRose);
         }
     </style>
+    <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~>> VVV block -->
+    <section vvv-block>
+        <style>
+            .articleVVVwrap {
+                display:   grid;
+                grid-gap:  1em;
+                padding:   1em;
+                margin:    0 auto;
+                max-width: 64em;
+                grid-template-columns: repeat(4,1fr);
+            }
+            @media all and (max-width:68em) {
+            .articleVVVwrap {
+                grid-template-columns: repeat(2,1fr);
+            }
+            }/* /media */
+            .articleVVVitems {
+                outline: 0.5em solid hsl(359, 69%, 23%);
+            }
+            .articleVVVitem {
+                padding: 0.5em;
+                border-radius: 1em;
+                background-color: hsl(0, 69%, 13%);
+            }
+            .articleVVVitem video {
+                aspect-ratio: 464/848;
+            }
+            .articleVVVitem video:not(:fullscreen) {
+                object-fit: cover;
+                border-radius: 0.5em;
+            }
+            .articleVVVtext {
+                padding: 1em 0.25em;
+                font-size: 1.25em;
+                line-height: 1.00;
+            }
+            .articleVVVtitle {
+                color: hsl(10deg 98% 59%);
+                line-height: 1.00;
+                font-size: 2.5em;
+                grid-column: 1/-1;
+            }
+        </style>
+        <article class="articleVVVwrap">
+            <section class="articleVVVtitle">
+                Советы от&nbsp;Лены
+            </section>
+            <section class="articleVVVitem">
+                <video controls --muted --loop --autoplay>
+                   <source type="video/mp4" src="art/video-lessons/1024-Opora5Sposobov.mp4#t=0.001"/>
+                </video>
+                <div class="articleVVVtext">
+                    5 способов почуствовать опору в вокале
+                </div>
+            </section>
+            <section class="articleVVVitem">
+                <video controls --muted --loop --autoplay>
+                   <source type="video/mp4" src="art/video-lessons/1023-SvoiGolos.mp4#t=0.001"/>
+                </video>
+                <div class="articleVVVtext">
+                    Как полюбить свой голос?
+                </div>
+            </section>
+            <section class="articleVVVitem">
+                <video controls --muted --loop --autoplay>
+                   <source type="video/mp4" src="art/video-lessons/1022-WhyToLearn.mp4#t=0.3"/>
+                </video>
+                <div class="articleVVVtext">
+                    Почему стоит заниматься музыкой, даже если ты не музыкант?
+                </div>
+            </section>
+            <section class="articleVVVitem">
+                <video controls --muted --loop --autoplay>
+                   <source type="video/mp4" src="art/video-lessons/1021-RaspevkaEasy.mp4#t=0.001"/>
+                </video>
+                <div class="articleVVVtext">
+                    Самая щадящая распевка для вашего голоса
+                </div>
+            </section>
+        </article>
+    </section>
     <!-- ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~>> BLOB -->
     <style video-setup>
         .videoRatioMobileA {
